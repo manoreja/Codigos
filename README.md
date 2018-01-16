@@ -37,6 +37,7 @@ B   Weather
 C   National Air System
 D   Security
 5.2 Los códigos de los aeropuertos y su correspondencia con el nombre real de  orígen y destino disponibles para realizar la consultas son:
+
 Code    Description
 30070   Kodiak, AK
 30073   Deadhorse, AK
