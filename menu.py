@@ -19,10 +19,9 @@ def main():
     print("\t opción 7: Media de retraso en llegada")
     print("\t opción 8: Probabilidad de retraso en llegada")
     print("\t opción 9: Media de retraso en llegada (solo vuelos retrasados)")
-    print("\t opción 10: Media de retraso por aerolinea")
-    print("\t opción 11: Media de retraso por aerolinea (solo vuelos retrasados)")
-    print("\t opción 12: Probabilidad de retraso por aerolinea")
-    print("\t opción 13: Probabilidad de cancelacion por aerolinea")
+    print("\t opción 10: Media de retraso por aerolinea (solo vuelos retrasados)")
+    print("\t opción 11: Probabilidad de retraso por aerolinea")
+    print("\t opción 12: Probabilidad de cancelacion por aerolinea")
 
     try:
         opcion = int(input())
@@ -94,20 +93,14 @@ def main():
         origen = raw_input()
         print("Escribe el destino: ")
         destino = raw_input()
-        os.system("spark-submit consultas.py 10 "+origen+" "+destino)
+        os.system("spark-submit consultas.py 11 "+origen+" "+destino)
     elif opcion == 11:
         print("Escribe el origen: ")
         origen = raw_input()
         print("Escribe el destino: ")
         destino = raw_input()
-        os.system("spark-submit consultas.py 11 "+origen+" "+destino)
-    elif opcion == 12:
-        print("Escribe el origen: ")
-        origen = raw_input()
-        print("Escribe el destino: ")
-        destino = raw_input()
         os.system("spark-submit consultas.py 12 "+origen+" "+destino)
-    elif opcion == 13:
+    elif opcion == 12:
         print("Escribe el origen: ")
         origen = raw_input()
         print("Escribe el destino: ")
