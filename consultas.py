@@ -39,12 +39,10 @@ elif opcion == "8":
 elif opcion == "9":
         sqlDF = spark.sql("SELECT AVG(ARR_DELAY_NEW) FROM f WHERE ORIGIN_CITY_MARKET_ID = '"+origen+"' AND DEST_CITY_MARKET_ID = '"+destino+"' AND ARR_DELAY_NEW <>0")
 elif opcion == "10":
-        sqlDF = spark.sql("SELECT AIRLINE_ID, AVG(ARR_DELAY_NEW - DEP_DELAY_NEW) FROM f WHERE  ORIGIN_CITY_MARKET_ID = '"+origen+"' AND DEST_CITY_MARKET_ID = '"+destino+"' GROUP BY AIRLINE_ID")
-elif opcion == "11":
         sqlDF = spark.sql("SELECT AIRLINE_ID, AVG(ARR_DELAY_NEW - DEP_DELAY_NEW) FROM f WHERE  ((ARR_DELAY_NEW - DEP_DELAY_NEW) > 0) AND ORIGIN_CITY_MARKET_ID = '"+origen+"' AND DEST_CITY_MARKET_ID = '"+destino+"' GROUP BY AIRLINE_ID")
-elif opcion == "12":
+elif opcion == "11":
         sqlDF = spark.sql("SELECT AIRLINE_ID, COUNT (*)/ (SELECT COUNT(*) FROM f WHERE ORIGIN_CITY_MARKET_ID = '"+origen+"' AND DEST_CITY_MARKET_ID = '"+destino+"' ) FROM f WHERE ((ARR_DELAY_NEW -  DEP_DELAY_NEW > 0)) AND ORIGIN_CITY_MARKET_ID = '"+origen+"' AND DEST_CITY_MARKET_ID = '"+destino+"' GROUP BY AIRLINE_ID ")
-elif opcion == "13":
+elif opcion == "12":
         sqlDF = spark.sql("SELECT AIRLINE_ID,COUNT (*)/ (SELECT COUNT(*) FROM f WHERE ORIGIN_CITY_MARKET_ID = '"+origen+"' AND DEST_CITY_MARKET_ID = '"+destino+"' ) FROM f WHERE CANCELLED = '1' AND ORIGIN_CITY_MARKET_ID = '"+origen+"' AND DEST_CITY_MARKET_ID = '"+destino+"' GROUP BY AIRLINE_ID ")
 else:
         print("Opcion no valida")
