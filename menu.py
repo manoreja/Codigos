@@ -107,7 +107,7 @@ def main():
         print("Escribe el destino: ")
         destino = raw_input()
         os.system("spark-submit consultas.py 12 "+origen+" "+destino)
-	elif opcion == 13:
+    elif opcion == 13:
         print("Escribe el origen: ")
         origen = raw_input()
         print("Escribe el destino: ")
