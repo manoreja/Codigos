@@ -3,7 +3,7 @@
 MANUAL DE AERODELAYS
 Requisitos mínimos:
 -Maquina con spark.
-(ES RECOMENDABLE EJECUTAR SPARK DESDE UN CLUSTER PARA OBTENER UN RENDIMIENTO ÓPTIMO)
+(NO ES RECOMENDABLE TODAVÍA EJECUTAR SPARK DESDE UN CLUSTER PARA OBTENER UN RENDIMIENTO ÓPTIMO)
 -S.O. Linux.
       2.  Archivos necesarios:
 Es necesario contar siempre con estos 3 archivos para garantizar el correcto funcionamiento de AERODELAYS:
@@ -16,7 +16,7 @@ Los 3  archivos deben de estar siempre en el mismo directorio.
 -Flights.csv: base de datos con los vuelos desde 2015 hasta 2017.
       3. Instrucciones:
 Se ejecuta el programa menu.py mediante el comando “python”. 
-Se visualizará un menú, solicitando una opción (disponible de la 1 a la 13). Se ha de introducir el número de la opción correspondiente. A continuación se pedirán datos adicionales para dicha consulta (origen, destino). Es importante recordar que en caso de introducir origen o destino, se ha de introducir el código numérico de la ciudad y no el nombre de la ciudad(Ver opciones en punto 5.2)
+Se visualizará un menú, solicitando una opción (disponible de la 1 a la 12). Se ha de introducir el número de la opción correspondiente. A continuación se pedirán datos adicionales para dicha consulta (origen, destino). Es importante recordar que en caso de introducir origen o destino, se ha de introducir el código numérico de la ciudad y no el nombre de la ciudad(Ver opciones en punto 5.2)
 Una vez introducidos todos los campos, se pulsa enter. Los datos de la consulta saldrán de forma automática. Se representarán dentro de un cuadro, después de que Spark muestre al usuario todas las operaciones intermedias que hace hasta llegar a él.
        4. Interpretación de datos:
 En los casos en los que se mide tiempo o medias de tiempo, aparecerá en pantalla un número que corresponde a los minutos.
