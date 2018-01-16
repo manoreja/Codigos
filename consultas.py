@@ -8,7 +8,7 @@ spark = SparkSession.builder.appName("Flights").getOrCreate()
 sc = spark.sparkContext
 sqlContext = SQLContext(sc)
 
-df = sqlContext.read.format('csv').options(header='true', inferSchema='true').load("/home/ubuntu/proyecto/Flights.csv")
+df = sqlContext.read.format('csv').options(header='true', inferSchema='true').load("Flights.csv")
 
 #df.printSchema()
 
