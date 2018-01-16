@@ -53,7 +53,7 @@ def main():
         print("Escribe el destino: ")
         destino = raw_input()
         os.system("spark-submit consultas.py 3 "+origen+" "+destino)
-	elif opcion == 4:
+    elif opcion == 4:
         print("Escribe el origen: ")
         origen = raw_input()
         print("Escribe el destino: ")
@@ -77,7 +77,7 @@ def main():
         print("Escribe el destino: ")
         destino = raw_input()
         os.system("spark-submit consultas.py 7 "+origen+" "+destino)
-	elif opcion == 8:
+    elif opcion == 8:
         print("Escribe el origen: ")
         origen = raw_input()
         print("Escribe el destino: ")
